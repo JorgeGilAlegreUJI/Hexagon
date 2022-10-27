@@ -1,6 +1,14 @@
 # ninja log v5
-6	1414	6885272671975322	CMakeFiles/Hexagon.dir/main.cpp.obj	34ca0597fbab7aed
-1415	1583	6885272673613524	Hexagon.exe	7c0d16521d9cb42d
-3	327	6885273081913149	build.ninja	d671496a0407d0d0
-5	1343	6885273107020612	CMakeFiles/Hexagon.dir/main.cpp.obj	34ca0597fbab7aed
-1344	1506	6885273108592811	Hexagon.exe	e488924e41a3a093
+7	1468	6885955208877305	CMakeFiles/Hexagon.dir/main.cpp.obj	34ca0597fbab7aed
+0	1481	6885959189316721	CMakeFiles/Hexagon.dir/src/main.cpp.obj	5c54ac1360cb333a
+1295	1447	6886006716188168	Hexagon.exe	b81bca0b1693af42
+3	590	6886014141200873	build.ninja	d671496a0407d0d0
+6	1294	6886006714705239	CMakeFiles/Hexagon.dir/src/Infrastructure/main.cpp.obj	ddc4f6fc985bf12c
+8	866	6886020011773614	CMakeFiles/Hexagon.dir/src/Infrastructure/Core/CoreLoop.cpp.obj	f6603a636b109b29
+0	1399	6886020017102786	CMakeFiles/Hexagon.dir/src/Infrastructure/Core/main.cpp.obj	486bf262d7d0ee5f
+1400	1578	6886020018849745	Hexagon.exe	6a4f3cf83a88b324
+13	918	6886020807884853	CMakeFiles/Hexagon.dir/src/Infrastructure/Core/CoreLoop.cpp.obj	f6603a636b109b29
+4	1449	6886020813196055	CMakeFiles/Hexagon.dir/src/Infrastructure/Core/main.cpp.obj	486bf262d7d0ee5f
+1450	1624	6886020814881885	Hexagon.exe	6a4f3cf83a88b324
+6	1843	6886037185037490	CMakeFiles/Hexagon.dir/src/Infrastructure/Core/CoreLoop.cpp.obj	f6603a636b109b29
+1843	2181	6886037188374142	Hexagon.exe	6a4f3cf83a88b324

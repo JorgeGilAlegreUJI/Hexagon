@@ -49,11 +49,17 @@ cmake_ninja_workdir = C$:/Users/jorge/CLionProjects/Hexagon/cmake-build-debug/
 
 build cmake_object_order_depends_target_Hexagon: phony || CMakeFiles/Hexagon.dir
 
-build CMakeFiles/Hexagon.dir/main.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/main.cpp || cmake_object_order_depends_target_Hexagon
-  DEP_FILE = CMakeFiles\Hexagon.dir\main.cpp.obj.d
+build CMakeFiles/Hexagon.dir/src/Infrastructure/Core/main.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Infrastructure/Core/main.cpp || cmake_object_order_depends_target_Hexagon
+  DEP_FILE = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\main.cpp.obj.d
   FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles\Hexagon.dir
-  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir
+  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Infrastructure\Core
+
+build CMakeFiles/Hexagon.dir/src/Infrastructure/Core/CoreLoop.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Infrastructure/Core/CoreLoop.cpp || cmake_object_order_depends_target_Hexagon
+  DEP_FILE = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\CoreLoop.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles\Hexagon.dir
+  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Infrastructure\Core
 
 
 # =============================================================================
@@ -63,7 +69,7 @@ build CMakeFiles/Hexagon.dir/main.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users
 #############################################
 # Link the executable Hexagon.exe
 
-build Hexagon.exe: CXX_EXECUTABLE_LINKER__Hexagon_Debug CMakeFiles/Hexagon.dir/main.cpp.obj
+build Hexagon.exe: CXX_EXECUTABLE_LINKER__Hexagon_Debug CMakeFiles/Hexagon.dir/src/Infrastructure/Core/main.cpp.obj CMakeFiles/Hexagon.dir/src/Infrastructure/Core/CoreLoop.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lmingw32  -lSDL2main  -lSDL2  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Hexagon.dir
