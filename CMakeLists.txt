@@ -8,7 +8,7 @@ include_directories(${SDL_INCLUDE_DIR})
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Hexagon src/Infrastructure/Core/main.cpp src/Infrastructure/Core/CoreLoop.cpp src/Infrastructure/Core/CoreLoop.h src/Infrastructure/Exceptions/SDL_Exception.h)
-target_link_libraries(Hexagon ${SDL2_LIBRARY}  -lmingw32 -lSDL2main -lSDL2)
+add_executable(Hexagon src/Infrastructure/Core/CoreLoop/main.cpp src/Infrastructure/Core/CoreLoop/CoreLoop.cpp src/Infrastructure/Core/CoreLoop/CoreLoop.h src/Infrastructure/Exceptions/SDL_Exception.h src/Infrastructure/Core/Utils/Color.cpp src/Infrastructure/Core/Utils/Color.h src/Infrastructure/Core/Utils/Sprite.cpp src/Infrastructure/Core/Utils/Sprite.h)
+target_link_libraries(Hexagon ${SDL2_LIBRARY}  -lmingw32 -lSDL2main -lSDL2 -lSDL2_image)
 
 
