@@ -67,11 +67,17 @@ build CMakeFiles/Hexagon.dir/src/Infrastructure/Core/Utils/Color.cpp.obj: CXX_CO
   OBJECT_DIR = CMakeFiles\Hexagon.dir
   OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\Utils
 
-build CMakeFiles/Hexagon.dir/src/Infrastructure/Core/Utils/Sprite.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Infrastructure/Core/Utils/Sprite.cpp || cmake_object_order_depends_target_Hexagon
-  DEP_FILE = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\Utils\Sprite.cpp.obj.d
+build CMakeFiles/Hexagon.dir/src/Infrastructure/Core/ECS/Components/Sprite.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Infrastructure/Core/ECS/Components/Sprite.cpp || cmake_object_order_depends_target_Hexagon
+  DEP_FILE = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\ECS\Components\Sprite.cpp.obj.d
   FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles\Hexagon.dir
-  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\Utils
+  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\ECS\Components
+
+build CMakeFiles/Hexagon.dir/src/Infrastructure/Core/ECS/Components/BaseComponent.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Infrastructure/Core/ECS/Components/BaseComponent.cpp || cmake_object_order_depends_target_Hexagon
+  DEP_FILE = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\ECS\Components\BaseComponent.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles\Hexagon.dir
+  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\ECS\Components
 
 
 # =============================================================================
@@ -81,7 +87,7 @@ build CMakeFiles/Hexagon.dir/src/Infrastructure/Core/Utils/Sprite.cpp.obj: CXX_C
 #############################################
 # Link the executable Hexagon.exe
 
-build Hexagon.exe: CXX_EXECUTABLE_LINKER__Hexagon_Debug CMakeFiles/Hexagon.dir/src/Infrastructure/Core/CoreLoop/main.cpp.obj CMakeFiles/Hexagon.dir/src/Infrastructure/Core/CoreLoop/CoreLoop.cpp.obj CMakeFiles/Hexagon.dir/src/Infrastructure/Core/Utils/Color.cpp.obj CMakeFiles/Hexagon.dir/src/Infrastructure/Core/Utils/Sprite.cpp.obj
+build Hexagon.exe: CXX_EXECUTABLE_LINKER__Hexagon_Debug CMakeFiles/Hexagon.dir/src/Infrastructure/Core/CoreLoop/main.cpp.obj CMakeFiles/Hexagon.dir/src/Infrastructure/Core/CoreLoop/CoreLoop.cpp.obj CMakeFiles/Hexagon.dir/src/Infrastructure/Core/Utils/Color.cpp.obj CMakeFiles/Hexagon.dir/src/Infrastructure/Core/ECS/Components/Sprite.cpp.obj CMakeFiles/Hexagon.dir/src/Infrastructure/Core/ECS/Components/BaseComponent.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lmingw32  -lSDL2main  -lSDL2  -lSDL2_image  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Hexagon.dir

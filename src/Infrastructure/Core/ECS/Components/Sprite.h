@@ -6,22 +6,21 @@
 #define HEXAGON_SPRITE_H
 
 #include <string>
+#include "BaseComponent.h"
+#include "../Entities/Entity.h"
 
 namespace Core{
-    class Sprite {
+    class Sprite : public BaseComponent{
     public:
-        Sprite(const std::string& path,const std::string& name, SDL_Renderer *renderer, const int x, const int y);
+        Sprite(Entity *entity, const std::string &path, const std::string &name, SDL_Renderer *renderer,
+               int x, int y);
         void Draw();
-        static const std::string TILES_GRASS_PATH;
-
-        SDL_Rect rect;
+        SDL_Rect rect{};
         std::string name;
     private:
         SDL_Texture *texture;
         SDL_Renderer *renderer;
-        SDL_Rect sourceRect;
-
-
+        SDL_Rect sourceRect{};
     };
 }
 

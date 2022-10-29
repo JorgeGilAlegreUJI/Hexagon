@@ -12,7 +12,7 @@ class SDL_Exception : public std:: exception {
 public:
     explicit SDL_Exception(const char *message) : message(message){}
 
-    virtual const char *what() const noexcept
+    [[nodiscard]] virtual const char *what() const noexcept
     {
         return message;
     }

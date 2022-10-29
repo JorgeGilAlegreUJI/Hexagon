@@ -6,16 +6,19 @@
 #include <iostream>
 #include "CoreLoop.h"
 #include "../../Exceptions/SDL_Exception.h"
-#include "../Utils/Sprite.h"
+#include "../ECS/Components/Sprite.h"
 
 Core::Sprite *spr;
+Core::Entity *e;
 
 namespace Core {
     void CoreLoop::Init() {
         InitSDL();
         CreateWindowAndRender();
         SDL_SetRenderDrawColor(renderer, DARK_BACKGROUND->r, DARK_BACKGROUND->g, DARK_BACKGROUND->b, DARK_BACKGROUND->a);
-        spr = new Sprite(Sprite::TILES_GRASS_PATH,"grass_01.png",renderer,0,0);
+        e = new Entity("test Entity");
+        spr = new Sprite(e,"Resources/Textures/Tiles/Terrain/Grass/", "grass_01.png", renderer, 0,0);
+        //e->addComponent<BaseComponent>(spr);
         isRunning = true;
     }
 
@@ -49,6 +52,7 @@ namespace Core {
     void CoreLoop::Render() {
         SDL_RenderClear(renderer);
         spr->Draw();
+        std::cout<<spr->entity->components->size()<<std::endl;
         SDL_RenderPresent(renderer);
     }
 
