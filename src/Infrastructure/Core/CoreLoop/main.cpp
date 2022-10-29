@@ -7,7 +7,7 @@ int main(int argc, char* args[] ){
     auto coreLoop = Core::CoreLoop();
     try {
         coreLoop.Init();
-        while (coreLoop.IsRunning()){
+        while (coreLoop.isRunning){
             coreLoop.HandleEvents();
             coreLoop.Update();
             coreLoop.Render();

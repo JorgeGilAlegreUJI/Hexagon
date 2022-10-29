@@ -5,6 +5,5 @@
 #include "BaseComponent.h"
 
 namespace Core{
-    BaseComponent::BaseComponent(Entity *entity): entity(entity) {}
     BaseComponent::~BaseComponent()= default;
 }

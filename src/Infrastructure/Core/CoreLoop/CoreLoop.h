@@ -5,27 +5,20 @@
 #ifndef HEXAGON_CORELOOP_H
 #define HEXAGON_CORELOOP_H
 #include "../Utils/Color.h"
+#include "../ECS/Systems/RenderSystem.h"
 
 namespace Core {
     class CoreLoop {
     public:
+        explicit CoreLoop();
         void Init();
         void HandleEvents();
         void Update();
         void Render();
         void Release();
-        bool IsRunning();
-    private:
-        void InitSDL();
-        void CreateWindowAndRender();
-    private:
-        const int SCREEN_WIDTH = 960;
-        const int SCREEN_HEIGHT = 540;
-        const Core::Color* DARK_BACKGROUND = new Color(32, 33, 36, 1);
         bool isRunning;
-        SDL_Window* window;
-        SDL_Renderer* renderer;
-        
+    private:
+        std::unique_ptr<RenderSystem> renderSystem;
     };
 }
 
