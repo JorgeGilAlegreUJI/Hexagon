@@ -11,11 +11,8 @@ namespace Core{
     void SpriteRenderer::Draw(){
         rect.x = entity->getGlobalX();
         rect.y = entity->getGlobalY();
-        SDL_QueryTexture(sprite->texture, nullptr, nullptr,&sprite->sourceRect.w,&sprite->sourceRect.h);
-        rect.w = sprite->sourceRect.w;
-        rect.w *= (int)entity->getGlobalScale();
-        rect.h = sprite->sourceRect.h;
-        rect.h *= (int)entity->getGlobalScale();
+        rect.w = (int)((float)sprite->sourceRect.w * entity->getGlobalScale());
+        rect.h = (int)((float)sprite->sourceRect.h * entity->getGlobalScale());
         SDL_RenderCopy(sprite->renderer,sprite->texture,&sprite->sourceRect,&rect);
     }
 
