@@ -14,37 +14,31 @@
 
 
 namespace Core{
-    class BaseComponent;
-    class Entity {
+    class BaseComponent; //Forward Declaration
+    class Entity : public std::enable_shared_from_this<Entity>{
     private:
+        std::unique_ptr<componentsMap> components;
     public:
 
 // Constructors
         explicit Entity(std::string name);
         ~Entity();
-
 // Components
         template<typename T>
-        void addComponent(const std::shared_ptr<T>& component,const std::shared_ptr<Entity>& entity);
+        void addComponent(std::shared_ptr<T> &component);
         template<typename T>
-        std::shared_ptr<T> getComponent();
-
+        std::weak_ptr<T> getComponent();
 // Transform
         std::pair<int,int> setLocalPosition(int x,int y);
         float getGlobalScale();
         int getGlobalX();
         int getGlobalY();
-
         float localScale;
         int localX,localY;
-
 //Hierarchy
-        std::unique_ptr<componentsMap> components;
         std::string name;
-        std::shared_ptr<Entity> parent;
-        std::vector<std::shared_ptr<Entity>> children;
-
-
+        std::shared_ptr<Entity> parent; //TODO: Setter /Getterfunctions
+        //TODO: children
     };
 
 

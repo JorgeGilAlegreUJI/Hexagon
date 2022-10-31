@@ -4,13 +4,13 @@
 
 #include "RenderSystem.h"
 #include <string>
-#include "../../../Exceptions/SDL_Exception.h"
+#include <utility>
+#include "../../Exceptions/SDL_Exception.h"
 #include <SDL2/SDL.h>
 
 //"Resources/Textures/Tiles/Terrain/Grass/"
 //"grass_01.png"
 namespace Core{
-
     std::shared_ptr<Sprite> Core::RenderSystem::createAndLoadSprite(const std::string& path, const std::string& name) {
         std::shared_ptr<Sprite> sprite = std::make_shared<Sprite>(path, name, renderer);
         std::pair<std::string,std::shared_ptr<Sprite>> pair = std::pair<std::string,std::shared_ptr<Sprite>>(name,sprite);
@@ -18,10 +18,10 @@ namespace Core{
         return sprite;
     }
 
-    RenderSystem::RenderSystem() {
+    RenderSystem::RenderSystem(std::shared_ptr<HierarchySystem> hierarchySystem) : hierarchySystem(std::move(hierarchySystem)), window(nullptr) , renderer(nullptr) {
         InitSDL();
         CreateWindowAndRender();
-        SDL_SetRenderDrawColor(renderer, DARK_BACKGROUND->r, DARK_BACKGROUND->g, DARK_BACKGROUND->b, DARK_BACKGROUND->a);
+        SDL_SetRenderDrawColor(renderer, DARK_BACKGROUND.r, DARK_BACKGROUND.g, DARK_BACKGROUND.b, DARK_BACKGROUND.a);
     }
 
     void RenderSystem::InitSDL() {
@@ -49,8 +49,15 @@ namespace Core{
     void RenderSystem::Render()
     {
         SDL_RenderClear(renderer);
-        for (const std::shared_ptr<SpriteRenderer>& sr : activeRenderers)
-            sr->Draw();
+        for (const std::weak_ptr<Entity>& e : hierarchySystem->activeEntities){
+            if(e.expired())continue;
+            auto sharedEntity = e.lock();
+            std::weak_ptr<SpriteRenderer> sr = sharedEntity->getComponent<SpriteRenderer>();
+            if(sr.expired())continue;
+            auto sharedSR = sr.lock();
+            sharedSR->Draw();
+        }
+
         SDL_RenderPresent(renderer);
     }
 
@@ -61,6 +68,8 @@ namespace Core{
         //Quit SDL subsystems
         SDL_Quit();
     }
+
+
 
 
 }

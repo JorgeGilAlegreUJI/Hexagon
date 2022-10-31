@@ -8,16 +8,19 @@
 
 #include <memory>
 #include "../../Utils/Sprite.h"
+#include "BaseComponent.h"
 
 namespace Core{
+    class RenderSystem; //Forward Declaration
     class SpriteRenderer : public BaseComponent {
     private:
         SDL_Rect rect{};
-        std::shared_ptr<Sprite> sprite;
     public:
-        explicit SpriteRenderer(std::shared_ptr<Sprite> spr);
+        explicit SpriteRenderer(const std::string& spriteName,const std::shared_ptr<RenderSystem>& renderSystem);
+        std::shared_ptr<Sprite> sprite;
         void Draw();
-        int layer;
+        //TODO: int layer;
+        ~SpriteRenderer() override;
     };
 
 

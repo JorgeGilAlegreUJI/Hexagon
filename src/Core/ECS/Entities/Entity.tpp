@@ -1,6 +1,6 @@
 #include <utility>
-#include "../../../Exceptions/Core_Exception.h"
 #include "Entity.h"
+#include "../../Exceptions/Core_Exception.h"
 #include <iostream>
 
 //
@@ -13,20 +13,24 @@ namespace Core{
     }
 
     template<typename T>
-    std::shared_ptr<T> Entity::getComponent() {
-        std::shared_ptr<BaseComponent> reference = components->at(typeid(T));
-        auto component = std::static_pointer_cast<T>(reference);
-        return component;
+    std::weak_ptr<T> Entity::getComponent() {
+        std::weak_ptr<T> weak{};
+        if (components->count(typeid(T)))
+        {
+            auto component = std::static_pointer_cast<T>(components->at(typeid(T)));
+            weak = std::weak_ptr<T>(component);
+        }
+        return weak;
     }
 
     template<typename T>
-    void Entity::addComponent(const std::shared_ptr<T>& component,const std::shared_ptr<Entity>& entity) {
+    void Entity::addComponent(std::shared_ptr<T> &component) {
+
         if (components->count(typeid(T))){
             throw Core_Exception("Entity already has that component");
         }
-        component->entity = entity;
-        auto pair = std::pair<componentPair>(typeid(T),component);
-        components->insert(pair);
+        component->entity = std::weak_ptr<Entity>(shared_from_this());
+        components->template emplace(typeid(T),component);
     }
 
     inline Entity::~Entity() {
@@ -65,12 +69,12 @@ namespace Core{
 
     inline void getScale(Entity *entity,float &result)
     {
-        result += entity->localScale;
+        result *= entity->localScale;
         if(entity->parent != nullptr)getScale(entity->parent.get(),result);
     }
 
     inline float Entity::getGlobalScale() {
-        float result = 0;
+        float result = 1;
         getScale(this,result);
         return result;
     }

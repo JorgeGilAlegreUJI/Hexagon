@@ -5,9 +5,7 @@
 #ifndef HEXAGON_SPRITE_H
 #define HEXAGON_SPRITE_H
 
-#include <string>
-#include "../ECS/Components/BaseComponent.h"
-#include "../ECS/Entities/Entity.h"
+#include "SDL2/SDL_render.h"
 
 namespace Core{
     class Sprite {

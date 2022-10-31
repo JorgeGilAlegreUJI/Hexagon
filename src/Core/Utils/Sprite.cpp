@@ -6,8 +6,6 @@
 #include <SDL2/SDL_image.h>
 #include <iostream>
 #include "Sprite.h"
-#include "../../Exceptions/Core_Exception.h"
-//#include "BaseComponent.h"
 
 namespace Core{
 

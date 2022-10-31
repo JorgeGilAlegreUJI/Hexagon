@@ -11,7 +11,7 @@ namespace Core{
     class Entity; //Forward Declaration
     class BaseComponent {
     public:
-        std::shared_ptr<Entity> entity;
+        std::weak_ptr<Entity> entity;
         virtual ~BaseComponent()=0;
     };
 }

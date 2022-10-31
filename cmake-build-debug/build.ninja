@@ -49,47 +49,83 @@ cmake_ninja_workdir = C$:/Users/jorge/CLionProjects/Hexagon/cmake-build-debug/
 
 build cmake_object_order_depends_target_Hexagon: phony || CMakeFiles/Hexagon.dir
 
-build CMakeFiles/Hexagon.dir/src/Infrastructure/Core/CoreLoop/main.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Infrastructure/Core/CoreLoop/main.cpp || cmake_object_order_depends_target_Hexagon
-  DEP_FILE = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\CoreLoop\main.cpp.obj.d
+build CMakeFiles/Hexagon.dir/src/Core/CoreLoop/main.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Core/CoreLoop/main.cpp || cmake_object_order_depends_target_Hexagon
+  DEP_FILE = CMakeFiles\Hexagon.dir\src\Core\CoreLoop\main.cpp.obj.d
   FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles\Hexagon.dir
-  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\CoreLoop
+  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Core\CoreLoop
 
-build CMakeFiles/Hexagon.dir/src/Infrastructure/Core/CoreLoop/CoreLoop.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Infrastructure/Core/CoreLoop/CoreLoop.cpp || cmake_object_order_depends_target_Hexagon
-  DEP_FILE = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\CoreLoop\CoreLoop.cpp.obj.d
+build CMakeFiles/Hexagon.dir/src/Core/CoreLoop/CoreLoop.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Core/CoreLoop/CoreLoop.cpp || cmake_object_order_depends_target_Hexagon
+  DEP_FILE = CMakeFiles\Hexagon.dir\src\Core\CoreLoop\CoreLoop.cpp.obj.d
   FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles\Hexagon.dir
-  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\CoreLoop
+  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Core\CoreLoop
 
-build CMakeFiles/Hexagon.dir/src/Infrastructure/Core/Utils/Color.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Infrastructure/Core/Utils/Color.cpp || cmake_object_order_depends_target_Hexagon
-  DEP_FILE = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\Utils\Color.cpp.obj.d
+build CMakeFiles/Hexagon.dir/src/Core/Utils/Color.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Core/Utils/Color.cpp || cmake_object_order_depends_target_Hexagon
+  DEP_FILE = CMakeFiles\Hexagon.dir\src\Core\Utils\Color.cpp.obj.d
   FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles\Hexagon.dir
-  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\Utils
+  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Core\Utils
 
-build CMakeFiles/Hexagon.dir/src/Infrastructure/Core/Utils/Sprite.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Infrastructure/Core/Utils/Sprite.cpp || cmake_object_order_depends_target_Hexagon
-  DEP_FILE = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\Utils\Sprite.cpp.obj.d
+build CMakeFiles/Hexagon.dir/src/Core/Utils/Sprite.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Core/Utils/Sprite.cpp || cmake_object_order_depends_target_Hexagon
+  DEP_FILE = CMakeFiles\Hexagon.dir\src\Core\Utils\Sprite.cpp.obj.d
   FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles\Hexagon.dir
-  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\Utils
+  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Core\Utils
 
-build CMakeFiles/Hexagon.dir/src/Infrastructure/Core/ECS/Components/BaseComponent.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Infrastructure/Core/ECS/Components/BaseComponent.cpp || cmake_object_order_depends_target_Hexagon
-  DEP_FILE = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\ECS\Components\BaseComponent.cpp.obj.d
+build CMakeFiles/Hexagon.dir/src/Core/ECS/Components/BaseComponent.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Core/ECS/Components/BaseComponent.cpp || cmake_object_order_depends_target_Hexagon
+  DEP_FILE = CMakeFiles\Hexagon.dir\src\Core\ECS\Components\BaseComponent.cpp.obj.d
   FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles\Hexagon.dir
-  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\ECS\Components
+  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Core\ECS\Components
 
-build CMakeFiles/Hexagon.dir/src/Infrastructure/Core/ECS/Components/SpriteRenderer.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Infrastructure/Core/ECS/Components/SpriteRenderer.cpp || cmake_object_order_depends_target_Hexagon
-  DEP_FILE = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\ECS\Components\SpriteRenderer.cpp.obj.d
+build CMakeFiles/Hexagon.dir/src/Core/ECS/Components/SpriteRenderer.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Core/ECS/Components/SpriteRenderer.cpp || cmake_object_order_depends_target_Hexagon
+  DEP_FILE = CMakeFiles\Hexagon.dir\src\Core\ECS\Components\SpriteRenderer.cpp.obj.d
   FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles\Hexagon.dir
-  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\ECS\Components
+  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Core\ECS\Components
 
-build CMakeFiles/Hexagon.dir/src/Infrastructure/Core/ECS/Systems/RenderSystem.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Infrastructure/Core/ECS/Systems/RenderSystem.cpp || cmake_object_order_depends_target_Hexagon
-  DEP_FILE = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\ECS\Systems\RenderSystem.cpp.obj.d
+build CMakeFiles/Hexagon.dir/src/Core/ECS/Systems/RenderSystem.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Core/ECS/Systems/RenderSystem.cpp || cmake_object_order_depends_target_Hexagon
+  DEP_FILE = CMakeFiles\Hexagon.dir\src\Core\ECS\Systems\RenderSystem.cpp.obj.d
   FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles\Hexagon.dir
-  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Infrastructure\Core\ECS\Systems
+  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Core\ECS\Systems
+
+build CMakeFiles/Hexagon.dir/src/Core/ECS/Systems/HierarchySystem.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Core/ECS/Systems/HierarchySystem.cpp || cmake_object_order_depends_target_Hexagon
+  DEP_FILE = CMakeFiles\Hexagon.dir\src\Core\ECS\Systems\HierarchySystem.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles\Hexagon.dir
+  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Core\ECS\Systems
+
+build CMakeFiles/Hexagon.dir/src/Core/ECS/Systems/Factories/EntityFactory.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Core/ECS/Systems/Factories/EntityFactory.cpp || cmake_object_order_depends_target_Hexagon
+  DEP_FILE = CMakeFiles\Hexagon.dir\src\Core\ECS\Systems\Factories\EntityFactory.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles\Hexagon.dir
+  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Core\ECS\Systems\Factories
+
+build CMakeFiles/Hexagon.dir/src/Core/ECS/Systems/Factories/SpriteRendererFactory.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Core/ECS/Systems/Factories/SpriteRendererFactory.cpp || cmake_object_order_depends_target_Hexagon
+  DEP_FILE = CMakeFiles\Hexagon.dir\src\Core\ECS\Systems\Factories\SpriteRendererFactory.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles\Hexagon.dir
+  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Core\ECS\Systems\Factories
+
+build CMakeFiles/Hexagon.dir/src/Game/GameLoop.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Game/GameLoop.cpp || cmake_object_order_depends_target_Hexagon
+  DEP_FILE = CMakeFiles\Hexagon.dir\src\Game\GameLoop.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles\Hexagon.dir
+  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Game
+
+build CMakeFiles/Hexagon.dir/src/Game/TileManager.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Game/TileManager.cpp || cmake_object_order_depends_target_Hexagon
+  DEP_FILE = CMakeFiles\Hexagon.dir\src\Game\TileManager.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles\Hexagon.dir
+  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Game
+
+build CMakeFiles/Hexagon.dir/src/Game/Tile.cpp.obj: CXX_COMPILER__Hexagon_Debug C$:/Users/jorge/CLionProjects/Hexagon/src/Game/Tile.cpp || cmake_object_order_depends_target_Hexagon
+  DEP_FILE = CMakeFiles\Hexagon.dir\src\Game\Tile.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles\Hexagon.dir
+  OBJECT_FILE_DIR = CMakeFiles\Hexagon.dir\src\Game
 
 
 # =============================================================================
@@ -99,7 +135,7 @@ build CMakeFiles/Hexagon.dir/src/Infrastructure/Core/ECS/Systems/RenderSystem.cp
 #############################################
 # Link the executable Hexagon.exe
 
-build Hexagon.exe: CXX_EXECUTABLE_LINKER__Hexagon_Debug CMakeFiles/Hexagon.dir/src/Infrastructure/Core/CoreLoop/main.cpp.obj CMakeFiles/Hexagon.dir/src/Infrastructure/Core/CoreLoop/CoreLoop.cpp.obj CMakeFiles/Hexagon.dir/src/Infrastructure/Core/Utils/Color.cpp.obj CMakeFiles/Hexagon.dir/src/Infrastructure/Core/Utils/Sprite.cpp.obj CMakeFiles/Hexagon.dir/src/Infrastructure/Core/ECS/Components/BaseComponent.cpp.obj CMakeFiles/Hexagon.dir/src/Infrastructure/Core/ECS/Components/SpriteRenderer.cpp.obj CMakeFiles/Hexagon.dir/src/Infrastructure/Core/ECS/Systems/RenderSystem.cpp.obj
+build Hexagon.exe: CXX_EXECUTABLE_LINKER__Hexagon_Debug CMakeFiles/Hexagon.dir/src/Core/CoreLoop/main.cpp.obj CMakeFiles/Hexagon.dir/src/Core/CoreLoop/CoreLoop.cpp.obj CMakeFiles/Hexagon.dir/src/Core/Utils/Color.cpp.obj CMakeFiles/Hexagon.dir/src/Core/Utils/Sprite.cpp.obj CMakeFiles/Hexagon.dir/src/Core/ECS/Components/BaseComponent.cpp.obj CMakeFiles/Hexagon.dir/src/Core/ECS/Components/SpriteRenderer.cpp.obj CMakeFiles/Hexagon.dir/src/Core/ECS/Systems/RenderSystem.cpp.obj CMakeFiles/Hexagon.dir/src/Core/ECS/Systems/HierarchySystem.cpp.obj CMakeFiles/Hexagon.dir/src/Core/ECS/Systems/Factories/EntityFactory.cpp.obj CMakeFiles/Hexagon.dir/src/Core/ECS/Systems/Factories/SpriteRendererFactory.cpp.obj CMakeFiles/Hexagon.dir/src/Game/GameLoop.cpp.obj CMakeFiles/Hexagon.dir/src/Game/TileManager.cpp.obj CMakeFiles/Hexagon.dir/src/Game/Tile.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lmingw32  -lSDL2main  -lSDL2  -lSDL2_image  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Hexagon.dir
